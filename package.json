@@ -3,9 +3,6 @@
   "homepage": "https://cnauddn.github.io/netflix-clone",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    // ... 기존 dependencies 유지
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,6 +12,7 @@
     "deploy": "gh-pages -d build"
   }
 }
+
 
   "eslintConfig": {
     "extends": [
