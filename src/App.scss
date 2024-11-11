@@ -1,0 +1,48 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $primary-black;
+  color: $text-white;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 70px; // Height of navigation bar
+}
+
+.content-rows {
+  width: 100%;
+  margin-top: -150px; // Overlap with hero section
+  position: relative;
+  z-index: 2;
+  
+  &__wrapper {
+    padding: 0 4%;
+  }
+}
+
+.content-row {
+  margin-bottom: 3rem;
+  
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    
+    @include responsive($tablet) {
+      font-size: 1.8rem;
+    }
+  }
+}
